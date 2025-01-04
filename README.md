@@ -10,7 +10,23 @@ Due to graphics hardware incompatibilities between RPi3 (VideoCore 4) and RPi4 (
 
 A 200MB disk image is also included here with pre-installed Mac OS 7.6.1 and Prince of Persia 1 for a quick demonstration of sound and graphics at 640x480 and 256 colors.
 
+
 ## Usage
+
+### Requirements
+- A Raspberry Pi
+- A blank SD card
+
+### Step 1: Create a fresh Raspibian Lite image
+
+1. Download the Raspberry Pi Imager from https://www.raspberrypi.com/software/
+2. Insert the SD card
+3. Select your Raspberry Pi Device
+4. Select Raspbian Lite as the OS, it's under **Raspberry Pi OS (other)**
+5. Select the SD card as your storage device
+6. When the SD card has been prepared you can put it in your Raspberry Pi and boot the machine
+
+### Step 2: Install Basilisk II
 
 To install, boot into your freshly created Raspberry Pi OS Lite and login with the default user "pi" (password "raspberry"). Then run the following commands:
 ```bash
