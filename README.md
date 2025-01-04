@@ -10,6 +10,8 @@ Due to graphics hardware incompatibilities between RPi3 (VideoCore 4) and RPi4 (
 
 A 200MB disk image is also included here with pre-installed Mac OS 7.6.1 and Prince of Persia 1 for a quick demonstration of sound and graphics at 640x480 and 256 colors.
 
+## Usage
+
 To install, boot into your freshly created Raspberry Pi OS Lite and login with the default user "pi" (password "raspberry"). Then run the following commands:
 ```bash
 sudo apt install git
