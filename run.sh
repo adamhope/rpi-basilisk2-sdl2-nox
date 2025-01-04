@@ -14,32 +14,7 @@ fi
 echo -e "${RED}>>> No update. Installing development packages in 5 seconds.${NC}"
 sleep 5
 
-sudo apt install unzip libudev-dev automake gobjc -y
-
-echo -e "${RED}>>> Downloading SDL2 version 2.0.14 in 5 seconds.${NC}"
-sleep 5
-
-# Original HOW-TO used SDL2 version 2.0.7
-
-mkdir -p ~/src/sdl2 &&
-wget https://www.libsdl.org/release/SDL2-2.0.14.tar.gz -O - | tar -xz -C ~/src/sdl2
-
-echo -e "${RED}>>> Compiling and installing SDL2 (without X11) in 5 seconds.${NC}"
-sleep 5
-
-# SDL2 version 2.0.10 removed the Mir video driver in favor of Wayland.
-
-cd ~/src/sdl2/SDL2-2.0.14 &&
-
-./configure --host=arm-raspberry-linux-gnueabihf \
-            --disable-video-opengl \
-            --disable-video-x11 \
-            --disable-pulseaudio \
-            --disable-esd \
-            --disable-video-wayland &&
-make -j3
-
-sudo make install
+sudo apt install unzip libgmp-dev libmpfr-dev libsdl2-dev autoconf -y
 
 echo -e "${RED}>>> Downloading Basilisk II in 5 seconds.${NC}"
 sleep 5
