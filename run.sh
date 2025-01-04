@@ -54,5 +54,4 @@ cp rpi-basilisk2-sdl2-nox/Quadra800.ROM .
 echo -e "${RED}>>> Done. Starting BasiliskII...${NC}"
 sleep 5
 
-sudo modprobe snd-pcm-oss
 BasiliskII
