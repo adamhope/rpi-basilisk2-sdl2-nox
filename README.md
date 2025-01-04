@@ -37,7 +37,9 @@ bash run.sh
 ```
 When the script ends, it will run Basilisk II automatically but you can also manually start by typing `BasiliskII`. Enjoy!
 
-## Changing display settings
+## Changing configuration
+
+### Display settings
 
 You can change the screen resolution by editing the .basilisk_ii_prefs and change the "screen" parameter. For some serious work, you can try the following:
 ```plaintext
@@ -46,10 +48,10 @@ displaycolordepth 16
 ```
 Then go to Mac OS 7.6.1 Control Panel and under Monitors, select "Thousands" of colors.
 
-## Changing keyboard mapping
+### Keyboard keyboard mapping
 
 There is a folder called "keyboard" that has the default raw keycodes used by Basilisk II. Basically it converts the host OS scancodes into the emulated Basilisk II keycodes. This allows the ALT and WINDOWS keys to be assigned the COMMAND and OPTION keys respectively. There are many keycode sets depending on which video driver is being used, e.g. X11, Quartz, Linux framebuffer, Cocoa, or Windows. This is especially needed when using non-QWERTY keyboard layouts.
 
-## Getting help with Basilisk II and Macintosh emulation in general
+## Getting help with Basilisk II, and Macintosh emulation in general
 - [E-Maculation wiki](https://www.emaculation.com/doku.php) setup guides for Basilisk II and other emulators
 - [E-Maculation forums](https://www.emaculation.com/forum/), active discussion about several Mac emulators]
