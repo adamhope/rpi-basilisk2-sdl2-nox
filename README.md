@@ -21,7 +21,7 @@ When the script ends, it will run Basilisk II automatically but you can also man
 
 You can change the screen resolution by editing the .basilisk_ii_prefs and change the "screen" parameter. For some serious work, you can try the following:
 ```plaintext
-screen win/1024/768
+screen dga/1024/768
 displaycolordepth 16
 ```
 Then go to Mac OS 7.6.1 Control Panel and under Monitors, select "Thousands" of colors.

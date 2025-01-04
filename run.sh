@@ -44,7 +44,8 @@ frameskip 0
 modelid 14
 cpu 4
 fpu true
-screen win/640/480
+screen dga/640/480
+scale_integer true
 displaycolordepth 8" | tee -a ~/.basilisk_ii_prefs
 
 cd ~
