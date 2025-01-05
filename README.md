@@ -37,6 +37,53 @@ bash run.sh
 ```
 When the script ends, it will run Basilisk II automatically but you can also manually start by typing `BasiliskII`. Enjoy!
 
+### Optiona: Boot Raspbian Directly into Basilisk II with a 5-Second Abort Option
+
+These instructions will guide you to configure your Raspberry Pi running Raspbian to **boot directly into Basilisk II** after a **5-second delay**, with an option for the user to **abort by pressing any key**.
+
+
+#### Step 1: Create an Auto-Start Script for Basilisk II
+
+1. Copy basilisk_autostart.sh to your home directory and make it executable
+
+```bash
+cd ~
+cp rpi-basilisk2-sdl2-nox/basilisk_autostart.sh .
+chmod +x basilisk_autostart.sh
+```
+
+2.	Open the /etc/rc.local file for editing:
+```bash
+sudo nano /etc/rc.local
+```
+
+3. Add the following line before the exit 0 line:
+```bash
+/home/pi/basilisk_autostart.sh &
+```
+4.	Save and exit by pressing Ctrl + X, then Y, then Enter.
+
+5. Hide boot messages
+```bash
+sudo nano /boot/firmware/cmdline.txt
+```
+Add the following options to the end of the line:
+```bash
+quiet splash
+```
+
+6. Enable Auto-Login to Console
+```bash
+sudo raspi-config
+```
+Navigate to System Options > Boot / Auto Login.
+Select Console Auto Login.
+
+5. Reboot your Raspberry Pi to test the configuration:
+```bash
+sudo reboot
+```
+
 ## Changing configuration
 
 ### Display settings
