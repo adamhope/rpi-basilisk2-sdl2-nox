@@ -37,10 +37,9 @@ bash run.sh
 ```
 When the script ends, it will run Basilisk II automatically but you can also manually start by typing `BasiliskII`. Enjoy!
 
-### Optional: Boot Raspbian Directly into Basilisk II with a 5-Second Abort Option
+### Optional: Starting Basilisk II automatically.
 
-These instructions will guide you to configure your Raspberry Pi running Raspbian to **boot directly into Basilisk II** after a **5-second delay**, with an option for the user to **abort by pressing any key**.
-
+These instructions will guide you to configure your Raspberry Pi running Raspbian to **boot directly into Basilisk II** after a **5-second delay** for a more seamless experience.
 
 #### Step 1: Auto-Start Basilisk II
 
@@ -84,7 +83,11 @@ Select Console Auto Login.
 sudo reboot
 ```
 
-## Changing configuration
+## Configuring Basilisk II
+
+The Basilisk II emulator is highly configurable. It is likely that you'll want to change some of the default configuration options e.g.
+- Path(s) to hard drive images for Basilisk II
+- Display settings, depending on which version of Mac OS you are emulating you won't always be able to do this directly in the guest vesion of Mac OS and you'll have to make changes in `.basilisk_ii_prefs` instead.
 
 ### Display settings
 
