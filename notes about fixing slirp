@@ -1,5 +1,0 @@
-**Note** At the time of writing Jan 5th 2025 there is a bug affecting slirp networking in Basilisk II on Raspbian Lite.
-- slirp networking is the easiest way to allow Mac OS inside Basilisk II to access your network.
-- If you do not plan to use slirp networking you do not need to do anything.
-- If you think you will use slirp (recommeneded) you will need to manually delete a few lines of code from `ether_unix.cpp` after cloning the repo and before building executing `bash run.sh`.
-See https://github.com/kanjitalk755/macemu/issues/232. I have linked to the issue to reduce the chance of the instructions becoming outdated.
