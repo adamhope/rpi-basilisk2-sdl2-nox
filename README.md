@@ -70,6 +70,7 @@ Add the following options to the end of the line:
 ```bash
 quiet splash
 ```
+Save and exit by pressing Ctrl + X, then Y, then Enter.
 
 #### Step 3: Enable Auto-Login to Console using raspi-config
 ```bash
@@ -91,16 +92,21 @@ The Basilisk II emulator is highly configurable. It is likely that you'll want t
 
 ### Display settings
 
-You can change the screen resolution by editing the .basilisk_ii_prefs and change the "screen" parameter. For some serious work, you can try the following:
+You can change the screen resolution by editing the .basilisk_ii_prefs and change the `screen` parameter. For some serious work, you can try the following:
 ```plaintext
 screen dga/1024/768
 displaycolordepth 16
 ```
 Then go to Mac OS 7.6.1 Control Panel and under Monitors, select "Thousands" of colors.
 
-### Keyboard keyboard mapping
+_Note: Many older games require 256 colours and will report an error if Thousands (16 bit) is selected._
 
-There is a folder called "keyboard" that has the default raw keycodes used by Basilisk II. Basically it converts the host OS scancodes into the emulated Basilisk II keycodes. This allows the ALT and WINDOWS keys to be assigned the COMMAND and OPTION keys respectively. There are many keycode sets depending on which video driver is being used, e.g. X11, Quartz, Linux framebuffer, Cocoa, or Windows. This is especially needed when using non-QWERTY keyboard layouts.
+### Keyboard mapping
+
+There is a folder called `keyboard` that has the default raw keycodes used by Basilisk II. Basically it converts the host OS scancodes into the emulated Basilisk II keycodes. This allows the ALT and WINDOWS keys to be assigned the COMMAND and OPTION keys respectively. There are many keycode sets depending on which video driver is being used, e.g. X11, Quartz, Linux framebuffer, Cocoa, or Windows. This is especially needed when using non-QWERTY keyboard layouts.
+
+_Note: If you are using an ADB keyboard with an ADB to USB adapter this will result in the command and option keys being swapped._
+
 
 ## Getting help with Basilisk II, and Macintosh emulation in general
 - [E-Maculation wiki](https://www.emaculation.com/doku.php) setup guides for Basilisk II and other emulators
