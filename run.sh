@@ -19,7 +19,6 @@ sudo apt install unzip libgmp-dev libmpfr-dev libsdl2-dev autoconf -y
 echo -e "${RED}>>> Downloading Basilisk II in 5 seconds.${NC}"
 sleep 5
 
-cd ~/src
 git clone https://github.com/kanjitalk755/macemu
 
 echo -e "${RED}>>> Compiling and installing Basilisk II in 5 seconds.${NC}"
@@ -27,12 +26,8 @@ sleep 5
 
 cd macemu/BasiliskII/src/Unix
 
-NO_CONFIGURE=1 ./autogen.sh &&
-./configure --enable-sdl-audio --enable-sdl-framework \
-            --enable-sdl-video --disable-vosf \
-            --without-mon --without-esd --without-gtk --disable-jit-compiler &&
+./autogen.sh
 make -j3
-
 sudo make install
 
 echo -e "${RED}>>> Setting up some Basilisk II preferences.${NC}"
