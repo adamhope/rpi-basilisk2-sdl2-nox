@@ -10,7 +10,6 @@ Due to graphics hardware incompatibilities between RPi3 (VideoCore 4) and RPi4 (
 
 A 200MB disk image is also included here with pre-installed Mac OS 7.6.1 and Prince of Persia 1 for a quick demonstration of sound and graphics at 640x480 and 256 colors.
 
-
 ## Usage
 
 ### Requirements
@@ -43,7 +42,7 @@ These instructions will guide you to configure your Raspberry Pi running Raspbia
 
 #### Step 1: Auto-Start Basilisk II
 
-1. Copy basilisk_autostart.sh to your home directory and make it executable
+Copy basilisk_autostart.sh to your home directory and make it executable
 
 ```bash
 cd ~
@@ -51,18 +50,19 @@ cp rpi-basilisk2-sdl2-nox/basilisk_autostart.sh .
 chmod +x basilisk_autostart.sh
 ```
 
-2.	Open the /etc/rc.local file for editing:
+Open the /etc/rc.local file for editing:
 ```bash
 sudo nano /etc/rc.local
 ```
 
-3. Add the following line before the exit 0 line:
+Add the following line before the exit 0 line:
 ```bash
 /home/pi/basilisk_autostart.sh &
 ```
-4.	Save and exit by pressing Ctrl + X, then Y, then Enter.
+Save and exit by pressing Ctrl + X, then Y, then Enter.
 
 #### Step 2: Hide boot messages
+Open cmdline.txt:
 ```bash
 sudo nano /boot/firmware/cmdline.txt
 ```
@@ -71,14 +71,14 @@ Add the following options to the end of the line:
 quiet splash
 ```
 
-#### Step 3: Enable Auto-Login to Console
+#### Step 3: Enable Auto-Login to Console using raspi-config
 ```bash
 sudo raspi-config
 ```
 Navigate to System Options > Boot / Auto Login.
 Select Console Auto Login.
 
-5. Reboot your Raspberry Pi to test the configuration:
+Reboot your Raspberry Pi to test the configuration:
 ```bash
 sudo reboot
 ```
