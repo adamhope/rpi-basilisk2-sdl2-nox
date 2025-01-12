@@ -47,6 +47,7 @@ fpu true
 screen dga/640/480
 nocdrom true
 scale_integer true
+extfs /home/pi
 displaycolordepth 8" | tee -a ~/.basilisk_ii_prefs
 
 cd ~
