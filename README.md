@@ -44,7 +44,7 @@ When promted to login use the username "pi" and password "raspberry", unless you
 Once you have logged inrun the following commands:
 ```bash
 sudo apt install git
-git clone https://github.com/ekbann/rpi-basilisk2-sdl2-nox
+git clone https://github.com/adamhope/rpi-basilisk2-sdl2-nox
 cd rpi-basilisk2-sdl2-nox
 bash run.sh
 ```
