@@ -30,7 +30,7 @@ cd macemu/BasiliskII/src/Unix
 NO_CONFIGURE=1 ./autogen.sh &&
 ./configure --enable-sdl-audio --enable-sdl-framework \
             --enable-sdl-video --disable-vosf \
-            --without-mon --without-esd --without-gtk --disable-jit-compiler --disable-nls &&
+            --without-mon --without-esd --without-gtk --disable-jit-compiler &&
 make -j3
 
 sudo make install
