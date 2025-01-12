@@ -45,6 +45,7 @@ modelid 14
 cpu 4
 fpu true
 screen dga/640/480
+nocdrom true
 scale_integer true
 displaycolordepth 8" | tee -a ~/.basilisk_ii_prefs
 
