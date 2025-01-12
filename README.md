@@ -31,7 +31,7 @@ _It is recommened that you change these_
 5. Select the SD card as your storage device
 6. Click next
 7. Optional: Customise settings e.g. hostname, username and password, wifi settings
-8. Click next
+8. Proceed through the confirmation screens
 9. When the SD card has been prepared eject it
 
 ### Step 2: Install Basilisk II
