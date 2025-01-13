@@ -120,7 +120,7 @@ Open cmdline.txt:
 sudo nano /boot/firmware/cmdline.txt
 ```
 Add the following options to the end of the line:
-```bash
+```plaintext
 quiet splash
 ```
 Save and exit by pressing Ctrl + X, then Y, then Enter.
